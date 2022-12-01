@@ -1,5 +1,7 @@
 import Section from "./Section"
 import { BsFillStarFill } from 'react-icons/bs';
+import { MdAlternateEmail } from "react-icons/md";
+import { BsArrowUpRightSquare } from "react-icons/bs";
 
 function MainContent(){
     return(
@@ -20,7 +22,7 @@ function MainContent(){
             </Section>
 
             <Section title="Skills">
-                <ul>
+                <ul className="list-unstyled">
                     <li><BsFillStarFill />HTML</li>
                     <li><BsFillStarFill />CSS</li>
                     <li><BsFillStarFill />JavaScript</li>
@@ -28,6 +30,18 @@ function MainContent(){
                     <li><BsFillStarFill />Django</li>
                     <li><BsFillStarFill />React</li>
                 </ul>
+            </Section>
+
+            <Section title="Hobbies">
+                <p>Coding, Exercising, Freerunning, Parkour, Calisthenics, Tricking, Reading, Fishing</p>
+            </Section>
+
+            <Section title="Contact Me">
+                <div className="row bg-secondary m-0">
+                    <div className="col"><MdAlternateEmail /></div>
+                    <div className="col">mohammed96218@yahoo.com</div>
+                    <div className="col"><BsArrowUpRightSquare /></div>
+                </div>
             </Section>
         </div>
     )

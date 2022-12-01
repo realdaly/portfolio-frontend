@@ -11,7 +11,7 @@ function App() {
       <div className="container-fluid bg-secondary min-vh-100">
         <div className="row text-white">
           <div style={{
-            maxWidth:"35rem", maxHeight:"95vh", overflow: "hidden"}} className="rounded-5 p-0 mx-auto my-lg-3 bg-dark shadow">
+            maxWidth:"35rem", maxHeight:"95vh", overflowY: "scroll"}} className="rounded-5 p-0 mx-auto my-lg-3 bg-dark shadow">
 
             <Header />
             <MainContent />
