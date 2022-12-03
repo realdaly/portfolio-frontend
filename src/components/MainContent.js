@@ -1,7 +1,9 @@
 import Section from "./Section"
 import { BsFillStarFill } from 'react-icons/bs';
 import { MdAlternateEmail } from "react-icons/md";
-import { BsArrowUpRightSquare } from "react-icons/bs";
+import { ImArrowUpRight2 } from "react-icons/im";
+import { AiFillInstagram } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
 
 function MainContent(){
     return(
@@ -23,12 +25,12 @@ function MainContent(){
 
             <Section title="Skills">
                 <ul className="list-unstyled">
-                    <li><BsFillStarFill />HTML</li>
-                    <li><BsFillStarFill />CSS</li>
-                    <li><BsFillStarFill />JavaScript</li>
-                    <li><BsFillStarFill />Python</li>
-                    <li><BsFillStarFill />Django</li>
-                    <li><BsFillStarFill />React</li>
+                    <li><BsFillStarFill className="starIcon me-2" />HTML</li>
+                    <li><BsFillStarFill className="starIcon me-2" />CSS</li>
+                    <li><BsFillStarFill className="starIcon me-2" />JavaScript</li>
+                    <li><BsFillStarFill className="starIcon me-2" />Python</li>
+                    <li><BsFillStarFill className="starIcon me-2" />Django</li>
+                    <li><BsFillStarFill className="starIcon me-2" />React</li>
                 </ul>
             </Section>
 
@@ -37,10 +39,31 @@ function MainContent(){
             </Section>
 
             <Section title="Contact Me">
-                <div className="row bg-secondary m-0">
-                    <div className="col"><MdAlternateEmail /></div>
-                    <div className="col">mohammed96218@yahoo.com</div>
-                    <div className="col"><BsArrowUpRightSquare /></div>
+                <div className="w-100 row m-0 g-3">
+                    <a className="text-white text-decoration-none" href="mailto:mohammed96218@yahoo.com" target="blank">
+                        <div className="contactContainer bg-secondary rounded">
+                            <div><MdAlternateEmail size={25} /></div>
+                            <div>mohammed96218@yahoo.com</div>
+                            <div><ImArrowUpRight2 size={20} /></div>
+                        </div>
+                    </a>
+
+                    <a className="text-white text-decoration-none" href="https://www.instagram.com/realdaly_" target="blank">
+                        <div className="contactContainer bg-secondary rounded">
+                            <div><AiFillInstagram size={25} /></div>
+                            <div>@realdaly_</div>
+                            <div><ImArrowUpRight2 size={20} /></div>
+                        </div>
+                    </a>
+
+                    <a className="text-white text-decoration-none" href="https://www.linkedin.com/in/realdaly/" target="blank">
+                        <div className="contactContainer bg-secondary rounded">
+                            <div><AiFillLinkedin size={25} /></div>
+                            <div>@realdaly</div>
+                            <div><ImArrowUpRight2 size={20} /></div>
+                        </div>
+                    </a>
+
                 </div>
             </Section>
         </div>
