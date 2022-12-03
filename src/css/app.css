@@ -21,9 +21,14 @@
     border-radius: 100rem;
 }
 
+#background {
+    background-color: #1e1e28;
+}
+
 #mainContainer {
     border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
+    background-color: #19191b;
 }
 
 
@@ -75,6 +80,7 @@
 #mainContainer .profilePicContainer {
     padding: .7rem;
     width: 8.5rem;
+    background-color: #19191b;
 }
 
 #mainContainer .profilePicContainer img {
@@ -88,6 +94,7 @@
 #mainContainer .profilePicContainer .activeIcon {
     padding: .4rem;
     color: #32CD32;
+    background-color: #19191b;
 }
 
 
@@ -113,4 +120,20 @@
 
 #mainContainer .contactContainer:hover {
     box-shadow: 0 0 3px #fff;
+}
+
+
+
+
+/* Slider styling */
+#mainContainer .slide {
+    height: 20rem;
+    width: auto;
+}
+
+#mainContainer .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }

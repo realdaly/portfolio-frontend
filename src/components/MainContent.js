@@ -1,4 +1,7 @@
 import Section from "./Section"
+import Slider from "./Slider"
+
+// Importing icons
 import { BsFillStarFill } from 'react-icons/bs';
 import { MdAlternateEmail } from "react-icons/md";
 import { ImArrowUpRight2 } from "react-icons/im";
@@ -32,6 +35,10 @@ function MainContent(){
                     <li><BsFillStarFill className="starIcon me-2" />Django</li>
                     <li><BsFillStarFill className="starIcon me-2" />React</li>
                 </ul>
+            </Section>
+
+            <Section title="Projects">
+                <Slider />
             </Section>
 
             <Section title="Hobbies">
