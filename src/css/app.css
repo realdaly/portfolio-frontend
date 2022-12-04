@@ -137,3 +137,24 @@
     object-fit: cover;
     object-position: top;
 }
+
+#mainContainer .slide .slideTitle {
+    position: absolute;
+    bottom: 0;
+    margin-left: 1.2rem;
+    filter: drop-shadow(0 0 1.5px #000);
+}
+
+#mainContainer .swiper-button-prev,
+#mainContainer .swiper-button-next {
+    color: #fff;
+    -webkit-text-stroke: 1px #000;
+}
+
+.swiper .swiper-button-next::after {
+	content: "›";
+}
+
+.swiper .swiper-button-prev::after {
+    content: "‹";
+}
