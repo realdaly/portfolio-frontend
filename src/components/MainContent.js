@@ -22,6 +22,11 @@ function MainContent(){
             </Section>
 
             <Section title="EDUCATION">
+                <p>2021</p>
+                <p>Graduated from Kufa University and got a bachelor's degree in English Language and Literature</p>
+            </Section>
+
+            <Section title="SKILLS">
                 <ul className="list-unstyled">
                     <li><BsFillStarFill className="starIcon me-2" />HTML</li>
                     <li><BsFillStarFill className="starIcon me-2" />CSS</li>
