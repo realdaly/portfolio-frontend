@@ -3,7 +3,7 @@
 
 * {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: thin;  /* Firefox */
+    scrollbar-width: thin; /* Firefox */
     scrollbar-color: #333 #000;
 }
 
@@ -148,13 +148,19 @@
 #mainContainer .swiper-button-prev,
 #mainContainer .swiper-button-next {
     color: #fff;
-    -webkit-text-stroke: 1px #000;
+    -webkit-text-stroke: 1.5px #000;
 }
 
 .swiper .swiper-button-next::after {
 	content: "›";
+    padding: 7rem 3rem;
 }
 
 .swiper .swiper-button-prev::after {
     content: "‹";
+    padding: 7rem 3rem;
+}
+
+#mainContainer .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    display: none;
 }
