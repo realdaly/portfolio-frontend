@@ -78,7 +78,6 @@
 }
 
 #mainContainer .profilePicContainer {
-    padding: .7rem;
     width: 8.5rem;
     background-color: #19191b;
 }
@@ -87,8 +86,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 0 25px;
-    transform: scale(2);
+    object-position: 0 17px;
+    transform: scale(1.5);
 }
 
 #mainContainer .profilePicContainer .activeIcon {

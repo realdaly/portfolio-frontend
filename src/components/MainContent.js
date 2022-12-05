@@ -1,6 +1,13 @@
 import Section from "./Section"
 import Slider from "./Slider"
 
+// Importing sections
+import About from "./sections/About"
+import Title from "./sections/Title"
+import Education from "./sections/Education"
+import Skills from "./sections/Skills"
+
+
 // Importing icons
 import { BsFillStarFill } from 'react-icons/bs';
 import { ImArrowUpRight2 } from "react-icons/im";
@@ -8,33 +15,23 @@ import { AiFillMail } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 
+
 function MainContent(){
     return(
         <div className="px-3">
 
-            <h1 className="fs-4 fw-bold border-bottom border-white border-opacity-10">
-                <p className="p-0 m-0">Mohamed Majid</p>
-                <p className="text-white-50">Web Developer</p>
-            </h1>
+            <Title />
             
             <Section title="ABOUT ME">
-                <p>I'm Mohamed, a Web Developer living in Najaf, Iraq. My first encounter with web design was back in the days of my first year at college and since then, web design is something that I do every day. I love making simple but neat designs.</p>
+                <About />
             </Section>
 
             <Section title="EDUCATION">
-                <p>2021</p>
-                <p>Graduated from Kufa University and got a bachelor's degree in English Language and Literature</p>
+                <Education />
             </Section>
 
             <Section title="SKILLS">
-                <ul className="list-unstyled">
-                    <li><BsFillStarFill className="starIcon me-2" />HTML</li>
-                    <li><BsFillStarFill className="starIcon me-2" />CSS</li>
-                    <li><BsFillStarFill className="starIcon me-2" />JavaScript</li>
-                    <li><BsFillStarFill className="starIcon me-2" />Python</li>
-                    <li><BsFillStarFill className="starIcon me-2" />Django</li>
-                    <li><BsFillStarFill className="starIcon me-2" />React</li>
-                </ul>
+                <Skills />
             </Section>
 
             <Section title="PROJECTS">

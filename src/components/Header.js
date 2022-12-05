@@ -1,20 +1,31 @@
 import { BsFillCircleFill } from 'react-icons/bs';
+import useFetch from './useFetch';
+import { v4 as uuidv4 } from 'uuid';
 
 function Header(){
+    const { data } = useFetch("https://realdaly.pythonanywhere.com/api/about/")
+    let profilePic
+
+    {data && data.map(item => {
+       profilePic = <img key={uuidv4()} src={item.profileImg} />
+    })}
+
     return(
         <div className="position-relative">
             <div className="coverContainer overflow-hidden">
-                <img src="https://media-exp1.licdn.com/dms/image/C4D12AQHMPBvE3avWzg/article-inline_image-shrink_1000_1488/0/1616872522462?e=1674691200&v=beta&t=Js2JbuwWJ6XfoZOxo4TNFahP23DVp9YnZx5LYU4bNvg" alt="Cover" />
+                {data && data.map(item => (
+                    <img key={item.id} src={item.coverImg} alt="Cover" />
+                ))}
             </div>
 
             <div className="profilePicContainer position-absolute bottom-0 ms-4 rounded-circle">
-                <div className="position-relative rounded-circle">
+                <div className="position-relative rounded-circle p-2">
 
                     <div className="overflow-hidden position-relative rounded-circle">
-                        <img className="rounded-circle" src="https://avatars.githubusercontent.com/u/99325839?v=4" alt="Profile" />
+                        {profilePic}
                     </div>
 
-                    <div className="position-absolute bottom-0 end-0">
+                    <div className="position-absolute bottom-0 end-0 mb-2 me-1">
                         <BsFillCircleFill size={35} className="activeIcon rounded-circle" />
                     </div>
 
