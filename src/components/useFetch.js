@@ -9,9 +9,6 @@ function useFetch(url){
 
         fetch(url)
         .then(response => {
-            if(!response.ok){
-                throw Error("Network error.")
-            }
             return response.json()
         })
         .then(json => {
@@ -19,7 +16,7 @@ function useFetch(url){
             setMessage(false)
         })
         .catch(error => {
-            setMessage(error.message)
+            setMessage("Loading...")
         })
         return () => abortController.abort()
     }, [url])
